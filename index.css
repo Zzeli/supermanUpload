@@ -1,7 +1,7 @@
 @import url(base.css);
 body,html,.container{
 	width: 100%;
-	height: 100%;
+	background: #fff;
 }
 .container{
 	display: flex;
@@ -13,7 +13,7 @@ body,html,.container{
 .cloud{
 	margin-top: 0.3rem;
 	width: 100%;
-	height: 3.2rem;
+	height: 2.66rem;
 	background: url("images/cloud.png")center/cover no-repeat;
 }
 .app-logo{
@@ -36,23 +36,32 @@ body,html,.container{
 .slogan{
 	width: 5.48rem;
 	margin-top: 1.07rem;
+	margin-bottom: 0.81rem;
 
 }
 .code_con{
 	width: 2.08rem;
 	height: 2.08rem;
-	background: url("images/code_con.png")center/contain no-repeat;
-	margin: 0.81rem 0 0.36rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
-.code_con img{
+.code_con .con{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+.code_con .code{
 	width: 1.86rem;
 }
 .upload{
 	font-size: 0.26rem;
   color: #1d98f6;
+  margin-top: 0.36rem;
 }
 .superman{
 	width: 100%;
